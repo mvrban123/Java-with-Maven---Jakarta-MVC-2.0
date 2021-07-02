@@ -1,0 +1,4 @@
+/opt/glassfish6/bin/asadmin --host localhost --port 8379
+create-jdbc-connection-pool --datasourceclassname org.apache.derby.jdbc.ClientDataSource40 --restype javax.sql.DataSource --property portNumber=1527:password=g2_nwtis:user=nwtis_g2:serverName=localhost:databaseName=nwtis_g2:url="jdbc\:derby\://localhost\:1527/nwtis_g2" NWTiS_CP_DZ3
+ping-connection-pool NWTiS_CP_DZ3
+create-jdbc-resource --connectionpoolid NWTiS_CP_DZ3 jdbc/NWTiS_DZ3
